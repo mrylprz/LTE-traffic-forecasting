@@ -46,7 +46,7 @@ With the introduction of 5G, operators should assess how long they should still 
 ## Repository Structure
 This repository is organized as follows:
 
-* Viz Files: PowerBI file, Tableau File
+* Viz Files: PowerBI file
 * Data: Contains the dataset used in this analysis.
 * Tables: Summary of Models Used and  Results
 * Photos: Cover photo
