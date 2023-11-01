@@ -71,7 +71,7 @@ The KPI, total data traffic volume per cell expressed in megabytes (MB), is used
 </p>
 
 ### Dataset
-The total daily traffic volume per cell is computed as the sum of all the hourly traffic within a single LTE cell for a single day. After the aggregation of data, the resulting graph for the total daily 4G data traffic volume of the sample cell is shown in Figure 1.
+The total daily traffic volume per cell is computed as the sum of all the hourly traffic within a single LTE cell (Cell_003781) for a single day. After the aggregation of data, the resulting graph for the total daily 4G data traffic volume of the sample cell is shown in Figure 1.
 
 *Figure 1. Historical Data of Total Daily 4G Data Traffic Volume of a Single Cell*
 <p align="center">
