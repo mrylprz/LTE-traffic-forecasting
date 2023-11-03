@@ -68,7 +68,7 @@ The KPI, total data traffic volume per cell expressed in megabytes (MB), is used
   
 *Table 1. Forecasting Tools and Models*  
 <p align="center">
-   <img src="https://github.com/mrylprz/LTE-traffic-forecasting/blob/main/Tables/Table%201.%20Forecasting%20Tools%20and%20Models.png" width="400">
+   <img src="https://github.com/mrylprz/LTE-traffic-forecasting/blob/main/Tables/Table 1. Forecasting Tools and Models.png" width="400">
 </p>
 
 ### Dataset
