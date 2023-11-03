@@ -1,4 +1,4 @@
-![Cover](https://github.com/mrylprz/LTE-traffic-forecasting/blob/main/Photos/cover.png)
+![Cover](Photos/cover.png)
 
 # 4G Mobile Data Traffic Forecasting and Analysis
 
