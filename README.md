@@ -68,7 +68,7 @@ The KPI, total data traffic volume per cell expressed in megabytes (MB), is used
   
 *Table 1. Forecasting Tools and Models*  
 <p align="center">
-   <img src="https://github.com/mrylprz/LTE-traffic-forecasting/blob/main/Tables/Table 1. Forecasting Tools and Models.png" width="400">
+   <img src="./Tables/Table 1. Forecasting Tools and Models.png" width="400">
 </p>
 
 ### Dataset
@@ -76,7 +76,7 @@ The total daily traffic volume per cell is computed as the sum of all the hourly
 
 *Figure 1. Historical Data of Total Daily 4G Data Traffic Volume of a Single Cell*
 <p align="center">
-   <img src="https://github.com/mrylprz/LTE-traffic-forecasting/blob/main/Visualizations/Figure%201.%20Historical%20Data%20of%20Total%20Daily%204G%20Data%20Traffic%20Volume%20of%20a%20Single%20Cell.png" width="800">
+   <img src="./Visualizations/Figure 1. Historical Data of Total Daily 4G Data Traffic Volume of a Single Cell.png" width="800">
 </p>
 
 Overall, there is an increasing trend from October 2017 to October 2018 as indicated by the red trend line in Figure 1.  On a magnified level, the increase in traffic is mostly observed during the period from January 2018 until May 2018. The traffic from May 2018 (inflection point) onwards changed into an almost horizontal trend (slightly decreasing) with a small fluctuation on the month of July. 
@@ -87,7 +87,7 @@ To verify the observations, the STL decomposition method is used to compute the 
 
 *Figure 2. STL for the Historical Data*
 <p align="center">
-   <img src="https://github.com/mrylprz/LTE-traffic-forecasting/blob/main/Visualizations/Figure%202.%20STL%20for%20the%20Historical%20Data.png" width="800">
+   <img src="./Visualizations/Figure 2. STL for the Historical Data.png" width="800">
 </p>
 
 ## Results
@@ -98,7 +98,7 @@ Using the automatic model selection function, out of the eight models available 
 
 *Figure 3. Additive Holt-Winters Model Forecast using Tableau*
 <p align="center">
-   <img src="https://github.com/mrylprz/LTE-traffic-forecasting/blob/main/Visualizations/Figure%203.%20Additive%20Holt-Winters%20Model%20Forecast%20using%20Tableau.png" width="800">
+   <img src="./Visualizations/Figure 3. Additive Holt-Winters Model Forecast using Tableau.png" width="800">
 </p>
 
 ### Holt's Linear and Multiplicative Holt-Winters Models (PowerBI)
@@ -106,14 +106,14 @@ PowerBI’s automatic model selection function has detected no seasonality in th
 
 *Figure 4. Holt’s Linear Method using PowerBI*
 <p align="center">
-   <img src="https://github.com/mrylprz/LTE-traffic-forecasting/blob/main/Visualizations/Figure%204.%20Holt%E2%80%99s%20Linear%20Method%20using%20PowerBI.png" width="800">
+   <img src="./Visualizations/Figure 4. Holt’s Linear Method using PowerBI.png" width="800">
 </p>
 
 Using the results of the decomposition in Figure 2, the seasonality for the forecast in PowerBI is manually set to weekly. By default, PowerBI uses MHW Method for seasonal data (Microsoft 2014). The resulting forecast using this model is shown in Figure 5. There is an improvement in the forecast upon consideration of the seasonality. The result is similar to the graph in Figure 3.
 
 *Figure 5. Multiplicative Holt-Winter’s Model Forecast using PowerBI*
 <p align="center">
-   <img src="https://github.com/mrylprz/LTE-traffic-forecasting/blob/main/Visualizations/Figure%205.%20Multiplicative%20Holt-Winter%E2%80%99s%20Model%20Forecast%20using%20PowerBI.png" width="800">
+   <img src="./Visualizations/Figure 5. Multiplicative Holt-Winter’s Model Forecast using PowerBI.png" width="800">
 </p>
 
 ### ARIMA and Prophet Models (Exploratory.io)
@@ -121,24 +121,24 @@ Similar to the decomposition results in Figure 2, Exploratory.io also detected t
 
 *Figure 6. ARIMA Model Forecast using Exploratory.io*
 <p align="center">
-   <img src="https://github.com/mrylprz/LTE-traffic-forecasting/blob/main/Visualizations/Figure%206.%20ARIMA%20Model%20Forecast%20using%20Exploratory.io.png" width="800">
+   <img src="./Visualizations/Figure 6. ARIMA Model Forecast using Exploratory.io.png" width="800">
 </p>
 
 Looking at the effect of seasonality shown in Figure 7, it is evident the daily traffic is higher during the weekends, especially Sunday, compared to the other days. The resulting forecast is shown in Figure 8. There were no data regarding external predictors in the dataset. However, according to Lin et al. *(2018), consideration of the holiday effects in network traffic forecasting is important for efficient congestion management and network planning. Therefore, to improve the forecast, the built-in holiday effect option in Exploratory was used assuming the same strength effect of the seasonality for comparison. The resulting forecast is shown in Figure 9. Referring to Table 2, there is a slight improvement in the forecast as confirmed by the reduction of error values and 2% in MAPE.
 
 *Figure 7. Effect of Seasonality*
 <p align="center">
-   <img src="https://github.com/mrylprz/LTE-traffic-forecasting/blob/main/Visualizations/Figure%207.%20Effect%20of%20Seasonality.png" width="500">
+   <img src="./Visualizations/Figure 7. Effect of Seasonality.png" width="500">
 </p>
 
 *Figure 8. Prophet Forecast using Exploratory.io*
 <p align="center">
-   <img src="https://github.com/mrylprz/LTE-traffic-forecasting/blob/main/Visualizations/Figure%208.%20Prophet%20Forecast%20using%20Exploratory.io.png" width="800">
+   <img src="./Visualizations/Figure 8. Prophet Forecast using Exploratory.io.png" width="800">
 </p>
 
 *Figure 9. Prophet Forecast with Holiday Effect using Exploratory.io*
 <p align="center">
-   <img src="https://github.com/mrylprz/LTE-traffic-forecasting/blob/main/Visualizations/Figure%209.%20Prophet%20Forecast%20with%20Holiday%20Effect%20using%20Exploratory.io.png" width="800">
+   <img src="./Visualizations/Figure 9. Prophet Forecast with Holiday Effect using Exploratory.io.png" width="800">
 </p>
 
 ## Comparison of All Forecasting Models
@@ -146,19 +146,19 @@ All forecasting results are shown in Figures 10 and 11. The graphs of the foreca
 
 *Figure 10. Comparison of All Models (Zoomed out)*
 <p align="center">
-   <img src="https://github.com/mrylprz/LTE-traffic-forecasting/blob/main/Visualizations/Figure%2010.%20Comparison%20of%20All%20Models%20(Zoomed%20in).png" width="900">
+   <img src="./Visualizations/Figure 10. Comparison of All Models (Zoomed in).png" width="900">
 </p>
 
 *Figure 11. Comparison of All Models (Zoomed out)*
 <p align="center">
-   <img src="https://github.com/mrylprz/LTE-traffic-forecasting/blob/main/Visualizations/Figure%2011.%20Comparison%20of%20All%20Models%20(Zoomed%20out).png" width="900">
+   <img src="./Visualizations/Figure 11. Comparison of All Models (Zoomed out).png" width="900">
 </p>
 
 Evaluating the error metrics (computed in Excel - [see computations](https://github.com/mrylprz/LTE-traffic-forecasting/blob/main/Calculations/Error%20Metrics%20Computation.xlsx)) summarised in Table 2, the forecasts generated by Tableau using the AHW and PowerBI using MHW have the lowest error values (highest accuracy) when compared to the test dataset. Here, the additive model slightly performed better than the multiplicative model. From observation, the seasonality looks more additive than multiplicative, as most of the weekly variations have almost equal widths. Furthermore, both Tableau and Exploratory detected the characteristics of the seasonal component of the data as weekly and additive. The forecasts generated using Exploratory.io also performed relatively well with error metrics very close to one another. The Prophet forecast with Holiday Effect outperformed the ARIMA forecast. Without the holiday effect, the ARIMA model’s forecast is slightly more accurate than using the Prophet algorithm. This highlights the importance of considering the effect of holidays. As mentioned previously, through visual inspection, the forecast generated by the HL (PowerBI without seasonality) deviated significantly from the actual values. The error metrics in Table 2 confirms this observation with the MAPE of the forecast almost twice the percentage error of the other models. Out of all the models, only HL did not consider the seasonality of the data. Whereas the other models accounted for the seasonality component and produced satisfactory forecasts.  Although the overall trend is increasing, the models put more weight to the most recent values. Consequently, all the forecasts followed an almost horizontal trend (slightly decreasing).
 
 *Table 2. Comparison of Error Metrics*
 <p align="center">
-   <img src="https://github.com/mrylprz/LTE-traffic-forecasting/blob/main/Tables/Table%202.%20Comparison%20of%20Error%20Metrics.png" width="600">
+   <img src="./Tables/Table 2. Comparison of Error Metrics.png" width="600">
 </p>
 
 ## Conclusion
